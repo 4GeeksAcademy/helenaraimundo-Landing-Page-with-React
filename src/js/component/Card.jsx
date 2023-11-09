@@ -1,22 +1,21 @@
 import React from 'react'
 
-const Card = () => {
+function Card (props) {
   return (
     <div className='col-sm-12 col-md-4 col-lg-3'>
       <div className='card text-center'>
         <img
-          src='https://placehold.co/500x325'
+          src={props.imageSrc} 
           className='card-img-top'
-          alt='placeholder'
+          alt={props.imageAlt}
         />
         <div className='card-body'>
-          <h5 className='card-title'>Card title</h5>
+          <h5 className='card-title'>{props.title}</h5>
           <p className='card-text'>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            {props.text}
           </p>
-          <a href='#' className='btn btn-primary'>
-            Find out more!
+          <a href={props.buttonLink} className='btn btn-primary'>
+            {props.buttonText}
           </a>
         </div>
       </div>
@@ -24,5 +23,5 @@ const Card = () => {
   )
 }
 
-export default Card
+export {Card}
 

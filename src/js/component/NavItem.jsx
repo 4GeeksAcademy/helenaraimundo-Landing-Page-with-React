@@ -11,6 +11,6 @@ const NavItem = () => {
          } ) } </ul>
 }
 
-export default NavItem;
+export {NavItem};
 
 
