@@ -7,13 +7,18 @@ import {CardContainer} from './CardContainer.jsx'
 
 const Home = () => {
   return (
-    <>
+    <div className='contianer-fluid'>
     <Navbar />
-    <Header />
-    <CardContainer />
-    <Footer />    
-    </>
+    <div className='container'>
+      <Header />
+      <div className='row g-4'>
+        <CardContainer />
+      </div>
+    </div>
+    <Footer />
+    </div>
   )
 }
 
 export default Home
+

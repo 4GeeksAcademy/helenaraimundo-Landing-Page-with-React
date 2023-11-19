@@ -4,10 +4,10 @@ import {NavItem} from './NavItem'
 
 const Navbar = () => {
   return (
-    <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
+    <nav className='navbar navbar-expand-lg navbar-warning bg-warning sticky-top px-lg-3'>
       <div className='container-fluid'>
         <a className='navbar-brand' href='#'>
-          Start Bootstrap
+          FRIDA KAHLO
         </a>
         <button
           className='navbar-toggler'
